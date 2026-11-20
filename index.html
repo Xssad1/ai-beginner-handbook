@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173e34">
+  <meta name="description" content="一本面向零基础的 AI 学习手册。从核心概念、工具与开源资源，到 Python、API、RAG 和项目实战，配有翻页阅读、术语词典、学习计划与测验。">
+  <meta property="og:title" content="AI 入门手册 · 从理解到实践">
+  <meta property="og:description" content="32 个知识页，57 个术语，从零理解 AI、学会工具并走向自己的小项目。">
+  <meta property="og:type" content="website">
+  <title>AI 入门手册 · 从理解到实践</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <aside class="sidebar" id="sidebar" aria-label="课程目录">
+    <a class="brand" href="#welcome"><span class="brand-icon">ai<span>✦</span></span><span>AI 入门手册<small>从理解到实践</small></span></a>
+    <button class="search-trigger" id="search-open"><span class="search-icon" aria-hidden="true"></span><span>搜索知识、术语、工具</span><kbd>/</kbd></button>
+    <div class="sidebar-label">你的学习地图</div>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom"><div class="progress-caption"><span>阅读进度</span><span id="progress-text">0%</span></div><div class="progress-track"><span id="progress-bar"></span></div><small id="progress-detail"></small><p>慢慢来，每次弄懂一个概念。</p></div>
+  </aside>
+  <div class="sidebar-shade" id="sidebar-shade"></div>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb"><button id="menu-toggle" class="icon-button mobile-menu" aria-label="打开课程目录">☰</button><span>学习手册</span><span class="slash">/</span><span id="crumb">开始之前</span></div><div class="top-actions"><button id="bookmark" class="text-button" aria-pressed="false">收藏本页</button><button id="share" class="text-button">分享本页</button><span class="edition">入门版 · 2026.11</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer id="page-footer" class="page-footer"></footer>
+    <div class="site-footer"><span>AI 入门手册 · 保持好奇，也保持判断</span><a href="#about">内容来源与说明</a></div>
+  </div>
+  <dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">搜索这本手册</h2><button id="search-close" class="icon-button" aria-label="关闭搜索">✕</button></div><label class="search-field"><span class="search-icon" aria-hidden="true"></span><input id="global-search" type="search" placeholder="试试 Token、论文、图片、API…" autocomplete="off"></label><div id="search-results" class="search-results"></div><p class="dialog-hint">搜索课程、术语和资源 · 按 Esc 关闭</p></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <noscript>请在浏览器中启用 JavaScript，以使用翻页、目录、搜索和学习计划。</noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
